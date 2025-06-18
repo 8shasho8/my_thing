@@ -5,43 +5,66 @@ import styles from '../styles/globals.module.css';
 
 export default function HomePage() {
   return (
+   
     <main className={styles.container}>
       <header className={styles.header}>
-        <h1>廣瀨遥介のポートフォリオ</h1>
-        <p> 勉強中</p>
+        <h1>廣瀨遥介のポートフォリオサイト</h1>
+        <p> Yousuke Hirose my portforio</p>
       </header>
 
-      <section className={styles.profile}>
-        {/* もしプロフィール画像があればここに */}
-        {/* <img src="/profile.jpg" alt="プロフィール写真" className={styles.avatar} /> */}
-        <p>
-          こんにちは！廣瀬遥介です。Web開発に熱中していて、新しい技術をどんどん取り入れています。
-          チーム開発や個人プロジェクトで実績があります。
-        </p>
+      <section className={styles.skills}>
+        <h2>～簡単な自己紹介～</h2>
+        <section className={styles.profile}>
+      <img src="/profile.jpg" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      </section>
+        <ul>
+          <li>出身地： 新潟県新潟市</li>
+          <li>満年齢： 20歳</li>
+          <li>在籍校： 東洋大学情報連携学部情報連携学科（INIAD）</li>
+          <li>担当アイドル：　大石泉、砂塚あきら、風野灯織、月村手毬</li>
+
+        </ul>
       </section>
 
-      <section className={styles.skills}>
-        <h2>スキルセット</h2>
+  <section className={styles.skills}>
+        <h2>～趣味～</h2>
         <ul>
-          <li>JavaScript / TypeScript</li>
-          <li>React / Next.js</li>
-          <li>Node.js / Express</li>
-          <li>CSS / SCSS / Tailwind CSS</li>
-          <li>Git / GitHub</li>
+          <li>ゲーム</li>
+          <li>アーケードゲーム</li>
+          <li>動画作成</li>
+          <li>野球観戦</li>
+          <li>ラーメン巡り</li>
+          <li>旅行</li>
+        </ul>
+      </section>
+
+        <section className={styles.skills}>
+        <h2>～資格・特技～</h2>
+        <ul>
+          <li>普通自動車免許（MT）</li>
+          <li>基本情報技術者（勉強中）</li>
+          <li>FP（勉強中）</li>
+          <li>マリオカート</li>
         </ul>
       </section>
 
       <section className={styles.projects}>
-        <h2>プロジェクト紹介</h2>
+        <h2>経験</h2>
 
         <article className={styles.projectCard}>
-          <h3>地域コミュニティアプリ</h3>
-          <p>地方創生を支援するためのWebアプリ。商工会との連携で地域活性化を目指しています。</p>
+          <h3>大学での学び</h3>
+          <p>INIADで学んだことを説明</p>
           <Button label="詳細を見る" onClick={() => alert('プロジェクト詳細ページはまだ作成中です')} />
         </article>
 
         <article className={styles.projectCard}>
-          <h3>バイト業務効率化ツール</h3>
+          <h3>個人的な学習</h3>
+          <p>プログラミング言語の学習</p>
+          <Button label="詳細を見る" onClick={() => alert('プロジェクト詳細ページはまだ作成中です')} />
+        </article>
+
+        <article className={styles.projectCard}>
+          <h3>経験</h3>
           <p>レジ締め作業を自動化し、バイト先の作業時間短縮を実現しました。</p>
           <Button label="詳細を見る" onClick={() => alert('プロジェクト詳細ページはまだ作成中です')} />
         </article>
