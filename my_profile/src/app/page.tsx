@@ -8,10 +8,10 @@ export default function HomePage() {
   const router = useRouter();
   return (
    
-    <main className={styles.container}>
+     <main className={styles.container}>
       <header className={styles.header}>
-        <h1>廣瀨遥介のポートフォリオサイト</h1>
-        <p> Yousuke Hirose my portforio</p>
+        <h1>大学での学び</h1>
+        <p>Campus Learning</p>
       </header>
 
       <section className={styles.skills}>
@@ -30,8 +30,12 @@ export default function HomePage() {
 
   <section className={styles.skills}>
         <h2>～趣味～</h2>
+         <section className={styles.profile}>
+      <img src="/profile.jpg" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      </section>
         <ul>
           <li>ゲーム</li>
+          <li>アニメ</li>
           <li>アーケードゲーム</li>
           <li>動画作成</li>
           <li>野球観戦</li>
@@ -42,6 +46,9 @@ export default function HomePage() {
 
         <section className={styles.skills}>
         <h2>～資格・特技～</h2>
+          <section className={styles.profile}>
+      <img src="/profile.jpg" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      </section>
         <ul>
           <li>普通自動車免許（MT）</li>
           <li>基本情報技術者（勉強中）</li>
@@ -49,6 +56,7 @@ export default function HomePage() {
           <li>マリオカート</li>
         </ul>
       </section>
+
 
       <section className={styles.projects}>
         <h2>経験</h2>
@@ -67,7 +75,7 @@ export default function HomePage() {
 
         <article className={styles.projectCard}>
           <h3>経験</h3>
-          <p>レジ締め作業を自動化し、バイト先の作業時間短縮を実現しました。</p>
+          <p>アルバイトや趣味で得たものです</p>
           <Button label="詳細を見る" onClick={() => alert('プロジェクト詳細ページはまだ作成中です')} />
         </article>
       </section>
