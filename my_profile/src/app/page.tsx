@@ -1,9 +1,11 @@
 'use client';
 
-import { Button } from '../components/Mycomponent';
+import { useRouter } from 'next/navigation';
+import { Button } from '../components/component';
 import styles from '../styles/globals.module.css';
 
 export default function HomePage() {
+  const router = useRouter();
   return (
    
     <main className={styles.container}>
@@ -54,7 +56,7 @@ export default function HomePage() {
         <article className={styles.projectCard}>
           <h3>大学での学び</h3>
           <p>INIADで学んだことを説明</p>
-          <Button label="詳細を見る" onClick={() => alert('プロジェクト詳細ページはまだ作成中です')} />
+            <Button label="詳細を見る" onClick={() => router.push('/campus')} />
         </article>
 
         <article className={styles.projectCard}>
