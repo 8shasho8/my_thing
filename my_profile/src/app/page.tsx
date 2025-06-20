@@ -23,7 +23,7 @@ export default function HomePage() {
           <li>出身地： 新潟県新潟市</li>
           <li>満年齢： 20歳</li>
           <li>在籍校： 東洋大学情報連携学部情報連携学科（INIAD）</li>
-          <li>担当アイドル：　大石泉、砂塚あきら、風野灯織、月村手毬</li>
+          <li>担当アイドル： 大石泉、砂塚あきら、風野灯織、月村手毬</li>
 
         </ul>
       </section>
@@ -34,7 +34,7 @@ export default function HomePage() {
       <img src="/profile.jpg" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
       </section>
         <ul>
-          <li>ゲーム</li>
+          <li>ゲーム機</li>
           <li>アニメ</li>
           <li>アーケードゲーム</li>
           <li>動画作成</li>
@@ -63,18 +63,29 @@ export default function HomePage() {
 
         <article className={styles.projectCard}>
           <h3>大学での学び</h3>
-          <p>INIADで学んだことを説明</p>
+        <ul>
+          <li>コンピュータ・サイエンス</li>
+          <li>ユーザー・エクスペリエンス</li>
+          <li>ビジネス構築</li>
+          <li>データ・サイエンス</li>
+          <li>経済学</li>
+          <li>チーム開発・チーム実習</li>
+        </ul>
             <Button label="詳細を見る" onClick={() => router.push('/campus')} />
         </article>
 
         <article className={styles.projectCard}>
           <h3>個人的な学習</h3>
-          <p>プログラミング言語の学習</p>
+        <ul>
+          <li>プログラミング学習</li>
+          <li>動画制作</li>
+          <li>資格の学習</li>
+        </ul>
           <Button label="詳細を見る" onClick={() => router.push('/my_learning')} />
         </article>
 
         <article className={styles.projectCard}>
-          <h3>経験</h3>
+          <h3>趣味やアルバイトでの経験</h3>
           <p>アルバイトや趣味で得たものです</p>
           <Button label="詳細を見る" onClick={() => router.push('/expensive')} />
         </article>
@@ -82,7 +93,7 @@ export default function HomePage() {
 
       <section className={styles.contact}>
         <h2>お問い合わせ</h2>
-        <Button label="メールで連絡する" onClick={() => window.location.href = 'mailto:your.email@example.com'} />
+        <Button label="メールで連絡する" onClick={() => window.location.href = 'hiroseyousuke84@gmail.com'} />
       </section>
     </main>
   );
