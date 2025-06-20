@@ -10,8 +10,8 @@ export default function HomePage() {
    
      <main className={styles.container}>
       <header className={styles.header}>
-        <h1>大学での学び</h1>
-        <p>Campus Learning</p>
+        <h1>自己紹介サイト</h1>
+        <p>My profile site</p>
       </header>
 
       <section className={styles.skills}>
@@ -70,13 +70,13 @@ export default function HomePage() {
         <article className={styles.projectCard}>
           <h3>個人的な学習</h3>
           <p>プログラミング言語の学習</p>
-          <Button label="詳細を見る" onClick={() => alert('プロジェクト詳細ページはまだ作成中です')} />
+          <Button label="詳細を見る" onClick={() => router.push('/my_learning')} />
         </article>
 
         <article className={styles.projectCard}>
           <h3>経験</h3>
           <p>アルバイトや趣味で得たものです</p>
-          <Button label="詳細を見る" onClick={() => alert('プロジェクト詳細ページはまだ作成中です')} />
+          <Button label="詳細を見る" onClick={() => router.push('/expensive')} />
         </article>
       </section>
 
