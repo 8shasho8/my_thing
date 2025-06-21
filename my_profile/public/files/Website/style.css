@@ -1,0 +1,317 @@
+body {
+  font-family: "Shippori Mincho", serif;
+  
+  margin-top: 45px;
+  background-image: url("./images/wahu45.jpg");
+}
+/* スクロールのインジケーター */
+.scroll-indicator {
+  position: fixed; /* 右側に固定 */
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%); /* 垂直方向に中央に配置 */
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-arrow {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px; /* 矢印とテキストの間隔 */
+  color: #333;
+}
+
+.scroll-text {
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Spacing between the icon and the text */
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  
+  /* ヘッダー部分 */
+  .header {
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    background-image: url("images/okumono_hi10.jpg");
+    color: rgb(0, 0, 0);
+    padding: 20px 10px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  
+  
+  .imageSection {
+    margin: 20px 0;
+    text-align: center;
+    padding-top: 0; /* 上部の余白をなくす */
+    transition: opacity 1s ease-in-out; /* フェードインエフェクト */
+  }
+  
+  .imageTitle {
+
+    margin-bottom: 10px;
+  }
+/* 画像コンテナ1: 左側に画像、右側にテキスト */
+.imageContainer1 {
+  display: flex; /* 横並び */
+  align-items: center; /* 垂直方向に中央揃え */
+  gap: 300px; /* 画像とテキストの間にスペースを追加 */
+  padding: 100px;
+  position: relative;
+  opacity: 0; /* 画像コンテナを最初に非表示に */
+  transition: opacity 1s ease-in-out; /* フェードインエフェクト */
+}
+
+/* 画像コンテナ2: 右側に画像、左側にテキスト */
+.imageContainer2 {
+  display: flex; /* 横並び */
+  align-items: center; /* 垂直方向に中央揃え */
+  gap: 300px; /* 画像とテキストの間にスペースを追加 */
+  flex-direction: row-reverse; /* 画像を右、テキストを左に配置 */
+  padding: 100px;
+  position: relative;
+  opacity: 0; /* 画像コンテナを最初に非表示に */
+  transition: opacity 1s ease-in-out; /* フェードインエフェクト */
+}
+
+/* テキストボックス */
+.textBox {
+  background-color: #6f6b6b; /* ボックスの背景色 */
+  padding: 15px; /* ボックス内の余白 */
+  border-radius: 8px; /* ボックスの角を丸くする（オプション） */
+  box-shadow: 0 2px 10px rgba(131, 133, 24, 0.1); /* 影をつける（オプション） */
+  width: 30%; /* テキストボックスの幅を調整 */
+  background-color: rgba(71, 71, 71, 0.226); /* 半透明の背景 */
+}
+
+/* テキストボックス内の段落 */
+.textBox p {
+  margin: 0; /* 余白をリセット */
+  line-height: 1.5;
+}
+
+/* visibleクラスが追加されたときに画像とテキストが表示される */
+.imageContainer1.visible, .imageContainer2.visible {
+  opacity: 1; /* 透明度を1にして表示 */
+}
+
+/* 画像のスタイル */
+.image {
+  width: 650px;
+  height: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 画像に影をつけて浮いている感じを出す */
+  transform: translateY(-10px); /* 画像を少し浮かせる */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* スムーズな動き */
+}
+
+
+
+/* 画像にホバーした時のスタイル */
+.image:hover {
+  transform: translateY(-15px); /* ホバー時に浮き上がる */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* ホバー時に影を強くする */
+}
+
+
+
+
+/* ギャラリーの背景 */
+.gall {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: background-image 1s ease-in-out, transform 1s ease-in-out; /* 背景画像の切り替えとズームインをアニメーション */
+}
+
+/* ズームインのエフェクト */
+.gall.zoom-in {
+  transform: scale(1.1); /* ズームイン効果 */
+}
+
+
+/* オーバーレイ */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+/* 全体のマージンとパディングをリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 幅や高さにパディングとボーダーを含める */
+}
+
+/* メニューバーのスタイル */
+.navbar {
+  background: linear-gradient(rgba(255, 255, 255, 0.164), rgba(255, 255, 255, 0.5)), url("./images/okumono_hi10.jpg");
+  background-size: cover; /* 背景画像を要素全体に広げる */
+  background-position: center; /* 背景画像を中央に配置 */
+  overflow: hidden;
+  position: fixed; /* スクロールしても固定 */
+  top: 0; /* 画面上部に固定 */
+  width: 100%; /* メニューが横幅いっぱいに広がるように */
+  z-index: 1000; /* 他の要素より上に表示 */
+}
+
+
+
+
+
+/* メニューリストのスタイル */
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; /* 両端に要素を配置 */
+  align-items: center; /* 垂直方向の中央揃え */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li:first-child {
+  margin-right: auto; /* 最初の項目を左に寄せる */
+}
+
+.nav-list li:not(:first-child) {
+  margin-left: 10px; /* 2番目以降のアイテムの間隔を調整 */
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 3px 25px;
+  text-decoration: none;
+  line-height: 40px; /* 文字の高さを揃える */
+  height: 45px; /* 各リンクの高さを統一 */
+}
+
+.nav-list li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* ヘッダーの余白調整 */
+.header {
+  padding-top: 50px; /* メニューバーの高さ分だけ余白を調整 */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 要素のサイズ計算を簡素化 */
+}
+
+.section {
+  padding: 15px; /* ボックス内の余白 */
+  border-radius: 8px; /* ボックスの角を丸くする（オプション） */
+  box-shadow: 0 2px 10px rgba(131, 133, 24, 0.1); /* 影をつける（オプション） */
+  width: 30%; /* テキストボックスの幅を調整 */
+  background-color: rgba(71, 71, 71, 0.226); /* 半透明の背景 */
+  justify-content: center; /* アイテムを中央に揃える */
+}
+/* 親要素のスタイル */
+.centered {
+  display: flex;                /* Flexboxを使用 */
+  justify-content: center;      /* 水平方向に中央揃え */
+  align-items: center;          /* 垂直方向に中央揃え */             /* 親要素の高さを画面全体に設定 */
+  margin: 10px;
+}
+
+/* テキストボックス */
+.textBox {
+  background-color: rgba(71, 71, 71, 0.226); /* 半透明の背景 */
+  padding: 15px;                    /* ボックス内の余白 */
+  border-radius: 8px;               /* ボックスの角を丸くする */
+  box-shadow: 0 2px 10px rgba(131, 133, 24, 0.1); /* 影をつける */
+  width: 65%;                      /* テキストボックスの幅を調整 */
+}
+
+/* テキストボックス内の段落 */
+.textBox p {
+  margin: 0; /* 余白をリセット */
+  line-height: 1.5;
+}
+
+.image-1 {
+  margin: 20px;
+  width: 600px;
+  height: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 画像に影をつけて浮いている感じを出す */
+}
+
+.imageGuide {
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.imageWrapper {
+  text-align: center; /* 画像と案内文を中央揃えにする */
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+
+  .imageSection {
+      padding: 10px;
+  }
+
+  .imageContainer1, .imageContainer2 {
+      flex-direction: column;
+  }
+
+  .textBox {
+      padding: 0 10px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-list li {
+      margin: 5px 0;
+  }
+
+  .imageWrapper img {
+      max-width: 100%;
+  }
+}
