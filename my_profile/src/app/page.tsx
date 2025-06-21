@@ -31,7 +31,10 @@ export default function HomePage() {
   <section className={styles.skills}>
         <h2>～趣味～</h2>
          <section className={styles.profile}>
-      <img src="/profile.jpg" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      <img src="/vc.png" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      </section>
+        <section className={styles.profile}>
+      <img src="/af.png" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
       </section>
         <ul>
           <li>ゲーム機</li>
@@ -47,7 +50,7 @@ export default function HomePage() {
         <section className={styles.skills}>
         <h2>～資格・特技～</h2>
           <section className={styles.profile}>
-      <img src="/profile.jpg" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      <img src="/mariokart.png" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
       </section>
         <ul>
           <li>普通自動車免許（MT）</li>
