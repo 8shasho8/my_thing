@@ -1,11 +1,10 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Button } from '../components/component';
+import { Button } from '../components/Mycomponent';
 import styles from '../styles/globals.module.css';
 
 export default function HomePage() {
-  const router = useRouter();
   return (
    
     <main className={styles.container}>
