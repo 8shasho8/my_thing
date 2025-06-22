@@ -1,7 +1,6 @@
 
 'use client';
 
-import { Button } from '../../components/component';
 import styles from '../../styles/globals.module.css';
 
 export default function campusPage() {
