@@ -9,6 +9,7 @@ import styles from '../styles/globals.module.css';
 export default function HomePage() {
   const router = useRouter();
   return (
+    <div className={styles.content}>
    <div className={styles.body}>
      <main className={styles.container}>
       <header className={styles.header}>
@@ -107,6 +108,7 @@ export default function HomePage() {
         </article>
       </section>
     </main>
+    </div>
     </div>
   );
 }
