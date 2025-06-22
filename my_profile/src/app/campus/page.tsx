@@ -30,10 +30,10 @@ export default function campusPage() {
         <ul>
           <li>ユーザー体験</li>
           <li>人間中心設計</li>
-          <li>動画作成<a href="/files/hirose_movie.mp4" download>Download Movie</a></li>
-          <li>パッケージデザイン設計<a href="/files/tenkai.pdf" download>Download Movie</a></li>
-          <li>Webサイトのデザイン作成<a href="/files/Website" download>Download Movie</a></li>
-          <li>ポスター作成<a href="/files/poster.pdf" download>Download Movie</a></li>
+          <li>動画作成<a href="/files/hirose_movie.mp4" download>Download</a></li>
+          <li>パッケージデザイン設計<a href="/files/tenkai.pdf" download>Download</a></li>
+          <li>Webサイトのデザイン作成<a href="/files/Website" download>Download</a></li>
+          <li>ポスター作成<a href="/files/poster.pdf" download>Download</a></li>
         </ul>
       </section>
 
