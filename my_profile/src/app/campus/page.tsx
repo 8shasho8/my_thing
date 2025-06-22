@@ -16,15 +16,23 @@ export default function campusPage() {
         <h2>～コンピュータ・サイエンス～</h2>
         <section className={styles.profile}>
       <img src="/othello.png" alt="プロフィール写真" width="600" height="300" className={styles.avatar}  />
+      <p>↑授業のチーム開発で作成したオセロ</p>
       </section>
       <h3>学習の鍵</h3>
         <p>1年生ではPython・HTML/CSS・Javscriptの勉強とPythonフレームワークのDjangoを用いてバックエンドの開発を行いました。</p>
+         <ul>
+          <li>Python・HTML/CSS・Javascript</li>
+          <li>アルゴリズム・Django</li>
+          <li>データの読み取り/取り出し、回帰</li>
+          <li>インターネット関連</li>
+        </ul>
       </section>
 
   <section className={styles.skills}>
         <h2>～ユーザー・エクスペリエンス～</h2>
          <section className={styles.profile}>
       <img src="/island.png" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      <p>↑授業で作成した観光サイト</p>
       </section>
       <h3>学習の鍵</h3>
         <ul>
@@ -32,7 +40,7 @@ export default function campusPage() {
           <li>人間中心設計</li>
           <li>動画作成<a href="/files/hirose_movie.mp4" download>Download</a></li>
           <li>パッケージデザイン設計<a href="/files/tenkai.pdf" download>Download</a></li>
-          <li>Webサイトのデザイン作成<a href="/files/Website" download>Download</a></li>
+          <li>Webサイトのデザイン作成</li>
           <li>ポスター作成<a href="/files/poster.pdf" download>Download</a></li>
         </ul>
       </section>
