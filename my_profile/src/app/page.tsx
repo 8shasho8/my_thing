@@ -106,11 +106,6 @@ export default function HomePage() {
           <Button label="詳細を見る" onClick={() => alert('現在製作中です')} />
         </article>
       </section>
-
-      <section className={styles.contact}>
-        <h2>お問い合わせ</h2>
-        <Button label="メールで連絡する" onClick={() => window.location.href = 'hiroseyousuke84@gmail.com'} />
-      </section>
     </main>
     </div>
   );
