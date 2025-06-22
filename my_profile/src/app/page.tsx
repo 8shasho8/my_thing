@@ -5,10 +5,11 @@ import { useRouter } from 'next/navigation';
 import { Button } from '../components/component';
 import styles from '../styles/globals.module.css';
 
+
 export default function HomePage() {
   const router = useRouter();
   return (
-   
+   <div className='body'>
      <main className={styles.container}>
       <header className={styles.header}>
         <h1>廣瀨遥介の自己紹介サイト</h1>
@@ -111,6 +112,7 @@ export default function HomePage() {
         <Button label="メールで連絡する" onClick={() => window.location.href = 'hiroseyousuke84@gmail.com'} />
       </section>
     </main>
+    </div>
   );
 }
 
