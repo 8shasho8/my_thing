@@ -47,11 +47,16 @@ export default function campusPage() {
 
         <section className={styles.skills}>
         <h2>～ビジネス構築～</h2>
+        <section className={styles.profile}>
+      <img src="/nv.png" alt="プロフィール写真" width="500" height="300" className={styles.avatar}  />
+      <p>↑授業で作成したスライド</p>
+      </section>
          <h3>学習の鍵</h3>
         <ul>
           <li>ロジカルシンキング</li>
           <li>ビジネスフレームワーク</li>
           <li>経営者としてのマインド</li>
+          <li>市場分析<a href="/files/bz.pdf" download>Download</a></li>
           <li>プロジェクトリーダー</li>
           <li>知的財産を活用した経営戦略</li>
           <li>会計</li>
@@ -66,7 +71,7 @@ export default function campusPage() {
           <li>検定統計量</li>
           <li>機械学習</li>
           <li>jupyter lab</li>
-          <li>kaggle</li>
+          <li>kaggle（現在チームでデータ分析を行っています）</li>
         </ul>
       </section>
 
