@@ -9,7 +9,7 @@ import styles from '../styles/globals.module.css';
 export default function HomePage() {
   const router = useRouter();
   return (
-   <div className='body'>
+   <div className={styles.body}>
      <main className={styles.container}>
       <header className={styles.header}>
         <h1>廣瀨遥介の自己紹介サイト</h1>
