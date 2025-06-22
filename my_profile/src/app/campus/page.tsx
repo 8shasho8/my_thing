@@ -5,7 +5,7 @@ import styles from '../../styles/globals.module.css';
 
 export default function campusPage() {
   return (
-   
+   <div className={styles.content}>
     <main className={styles.container}>
       <header className={styles.header}>
         <h1>大学での学び</h1>
@@ -87,5 +87,6 @@ export default function campusPage() {
       </section>
 
     </main>
+    </div>
   );
 }
